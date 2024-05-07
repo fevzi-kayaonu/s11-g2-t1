@@ -13,8 +13,8 @@ function AddFriend() {
 
   const { loggedInUser } = useAuth();
   const token = loggedInUser.token;
-  console.log(loggedInUser);
-  console.log(token);
+  // console.log(loggedInUser);
+  // console.log(token);
   const history = useHistory();
 
   const addFriendSubmit = (data) => {

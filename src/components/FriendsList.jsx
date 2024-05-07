@@ -1,12 +1,10 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
-import { AuthContext, useAuth } from "../contexts/AuthContext";
+import React, { useEffect, useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 
 export default function FriendsList() {
   const [friends, setFriends] = useState([]);
   const { loggedInUser, isUserLoggedIn } = useAuth();
-  console.log("userlog : ", loggedInUser);
-  console.log("token : ", loggedInUser.token);
 
   console.log("isUserLoggedIn1 : ", isUserLoggedIn);
   const token =
