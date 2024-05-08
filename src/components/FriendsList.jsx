@@ -7,8 +7,7 @@ export default function FriendsList() {
   const { loggedInUser, isUserLoggedIn } = useAuth();
 
   console.log("isUserLoggedIn1 : ", isUserLoggedIn);
-  const token =
-    "ahuBHejkJJiMDhmODZhZi0zaeLTQ4ZfeaseOGZgesai1jZWYgrTA07i73Gebhu98"; //loggedInUser.token;
+  const token = loggedInUser.token;
 
   useEffect(() => {
     if (isUserLoggedIn) {
